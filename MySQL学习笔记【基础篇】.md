@@ -431,7 +431,7 @@ SELECT last_name,department_id,salary*12*(1+IFNULL(commission_pct, 0)) AS 年薪
 
 前一个为日期字符串，后一个为日期格式，日期格式可以从下列表中挑选。
 
-<img src="../本地图床/image-20200727212541764.png" alt="image-20200727212541764" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163331.png" alt="image-20200727212541764" style="zoom:67%;" />
 
 举个例子：
 
@@ -1038,11 +1038,11 @@ CROSS JOIN boys bo;
 
 #### join连接总结
 
-<img src="../本地图床/image-20200731182024864.png" alt="image-20200731182024864" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163332.png" alt="image-20200731182024864" style="zoom:67%;" />
 
-<img src="../本地图床/image-20200731182151705.png" alt="image-20200731182151705" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163333.png" alt="image-20200731182151705" style="zoom:67%;" />
 
-<img src="../本地图床/image-20200731182418861.png" alt="image-20200731182418861" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163334.png" alt="image-20200731182418861" style="zoom:67%;" />
 
 #### 综合案例
 
@@ -2168,7 +2168,7 @@ WHERE 0;
 
 #### 1.整型
 
-<img src="../本地图床/image-20200808100328841.png" alt="image-20200808100328841" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163335.png" alt="image-20200808100328841" style="zoom:67%;" />
 
 **特点**：
 
@@ -2203,7 +2203,7 @@ CREATE TABLE tab_int(
 
 #### 2.小数
 
-<img src="../本地图床/image-20200809085740148.png" alt="image-20200809085740148" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163336.png" alt="image-20200809085740148" style="zoom:67%;" />
 
 **浮点型**：
 
@@ -2242,13 +2242,13 @@ CREATE TABLE tab_int(
   - enum用于保存枚举
   - set用于保存集合
 
-<img src="../本地图床/image-20200809091158386.png" alt="image-20200809091158386" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163337.png" alt="image-20200809091158386" style="zoom:67%;" />
 
 char代表固定长度的字符，varchar代表可变长度的字符。可以和char、string类比。
 
 #### 4.日期型
 
-<img src="../本地图床/image-20200809092153674.png" alt="image-20200809092153674" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163338.png" alt="image-20200809092153674" style="zoom:67%;" />
 
 ### 常见约束
 
@@ -2281,7 +2281,7 @@ char代表固定长度的字符，varchar代表可变长度的字符。可以和
 - 表级约束
   - 除了非空(NOT NULL)、默认(DEFAULT)，其他的都支持；
 
-<img src="../本地图床/image-20200809103219899.png" alt="image-20200809103219899" style="zoom:67%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163339.png" alt="image-20200809103219899" style="zoom:67%;" />
 
 #### 创建表时添加约束
 
@@ -2574,6 +2574,7 @@ update 表 set 郭襄的余额=1500 where name='郭襄'
       rollback;#回滚事务
       savepoint 节点名;	#设置保存点，联想一下断点
       ```
+
 ### 演示事务的使用步骤
 
 - 准备表并插入数据：
@@ -2654,7 +2655,7 @@ update 表 set 郭襄的余额=1500 where name='郭襄'
 - `REPEATABLE READ`(可重复读) 确保事务可以多次从一个字段中读取相同的值，在这个事务持续期间，禁止其他事务对这个字段进行更新，可以避免脏读、不可重复读和一部分幻读，但幻读的问题依旧存在。
 - `SERIALIZABLE`(串行化) 确保事务可以从一个表中读取相同的行，在这个事务持续期间，禁止其他事务对该表执行插入、更新和删除操作，所有并发问题都可以避免，但性能十分低， 可以避免脏读、不可重复读和幻读。
 
-![image-20200812100443705](../本地图床/image-20200812100443705.png)
+![image-20200812100443705](https://gitee.com/DIY-Z/images/raw/master/images/20200930163340.png)
 
 #### 演示事务的隔离级别
 
@@ -2830,7 +2831,7 @@ desc 视图名;
 
 ==注意这里的更新是指更改视图中的数据。==
 
-<img src="../本地图床/image-20200814082932041.png" alt="image-20200814082932041" style="zoom:80%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163341.png" alt="image-20200814082932041" style="zoom:80%;" />
 
 其余的就可以，语法和普通表的一样。更新包括插入、删除、修改。
 
@@ -2868,7 +2869,7 @@ ON d.`department_id` = e.department_id;
 
 #### 小测试
 
-![image-20200814085723368](../本地图床/image-20200814085723368.png)
+![image-20200814085723368](https://gitee.com/DIY-Z/images/raw/master/images/20200930163342.png)
 
 1.
 
@@ -3615,9 +3616,9 @@ ELSE 要返回的值n
 END
 ```
 
-<img src="../本地图床/image-20200817104951279.png" alt="image-20200817104951279" style="zoom:80%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163343.png" alt="image-20200817104951279" style="zoom:80%;" />
 
-<img src="../本地图床/image-20200817105043268.png" alt="image-20200817105043268" style="zoom:80%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163344.png" alt="image-20200817105043268" style="zoom:80%;" />
 
 ##### 特点：
 
@@ -3816,4 +3817,4 @@ CALL test_randstr_insert(14)$
 
 #### 小结：
 
-<img src="../本地图床/image-20200817114325316.png" alt="image-20200817114325316" style="zoom:80%;" />
+<img src="https://gitee.com/DIY-Z/images/raw/master/images/20200930163345.png" alt="image-20200817114325316" style="zoom:80%;" />
