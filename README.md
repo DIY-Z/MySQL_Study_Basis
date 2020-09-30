@@ -2,4 +2,4 @@
 
 MySQL基础
 
-**注意:目前markdown文件中一些图片的url还未调整过来，可以先下载pdf版，pdf版中一些图片完整显示。**
+** markdown版为正常版，不过有些格式在github上不支持，故可以拷贝到markdown阅读器上查看，如typero。**
